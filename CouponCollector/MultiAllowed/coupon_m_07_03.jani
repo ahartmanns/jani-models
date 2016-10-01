@@ -1,0 +1,1338 @@
+{
+    "actions": [],
+    "automata": [
+        {
+            "edges": [
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup6",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l0",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l19"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup5",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l17",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l18"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l19",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 6
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 6
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 6
+                            }
+                        }
+                    },
+                    "location": "l17"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l0",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 6
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 6
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 6
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l17"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup4",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l15",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l16"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l18",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 5
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 5
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 5
+                            }
+                        }
+                    },
+                    "location": "l15"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l17",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 5
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 5
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 5
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l15"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup3",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l13",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l14"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l16",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 4
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 4
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 4
+                            }
+                        }
+                    },
+                    "location": "l13"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l15",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 4
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 4
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 4
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l13"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup2",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l11",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l12"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l14",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 3
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 3
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 3
+                            }
+                        }
+                    },
+                    "location": "l11"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l13",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 3
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 3
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 3
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l11"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup1",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l9",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l10"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l12",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 2
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 2
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 2
+                            }
+                        }
+                    },
+                    "location": "l9"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l11",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 2
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 2
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 2
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l9"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "coup0",
+                                    "value": true
+                                }
+                            ],
+                            "location": "l7",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l8"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l10",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 1
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 1
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "l7"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l9",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 1
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 1
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 1
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l7"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l8",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": "draw0",
+                                    "op": "=",
+                                    "right": 0
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw1",
+                                    "op": "=",
+                                    "right": 0
+                                }
+                            },
+                            "op": "∨",
+                            "right": {
+                                "left": "draw2",
+                                "op": "=",
+                                "right": 0
+                            }
+                        }
+                    },
+                    "location": "l6"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l7",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": "draw0",
+                                        "op": "=",
+                                        "right": 0
+                                    },
+                                    "op": "∨",
+                                    "right": {
+                                        "left": "draw1",
+                                        "op": "=",
+                                        "right": 0
+                                    }
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "draw2",
+                                    "op": "=",
+                                    "right": 0
+                                }
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l6"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "numberDraws",
+                                    "value": 1
+                                }
+                            ],
+                            "location": "l6",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l5"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 0
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 1
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 2
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 3
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 4
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 5
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw2",
+                                    "value": 6
+                                }
+                            ],
+                            "location": "l5",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l4"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 0
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 1
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 2
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 3
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 4
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 5
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw1",
+                                    "value": 6
+                                }
+                            ],
+                            "location": "l4",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l3"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 0
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 1
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 2
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 3
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 4
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 5
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "draw0",
+                                    "value": 6
+                                }
+                            ],
+                            "location": "l3",
+                            "probability": {
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 7
+                                }
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l2"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l1",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": true
+                    },
+                    "location": "l1"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l2",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "left": {
+                                    "left": {
+                                        "left": {
+                                            "left": {
+                                                "left": {
+                                                    "left": "coup0",
+                                                    "op": "∧",
+                                                    "right": "coup1"
+                                                },
+                                                "op": "∧",
+                                                "right": "coup2"
+                                            },
+                                            "op": "∧",
+                                            "right": "coup3"
+                                        },
+                                        "op": "∧",
+                                        "right": "coup4"
+                                    },
+                                    "op": "∧",
+                                    "right": "coup5"
+                                },
+                                "op": "∧",
+                                "right": "coup6"
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l0"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [],
+                            "location": "l1",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "exp": {
+                                "exp": {
+                                    "left": {
+                                        "left": {
+                                            "left": {
+                                                "left": {
+                                                    "left": {
+                                                        "left": "coup0",
+                                                        "op": "∧",
+                                                        "right": "coup1"
+                                                    },
+                                                    "op": "∧",
+                                                    "right": "coup2"
+                                                },
+                                                "op": "∧",
+                                                "right": "coup3"
+                                            },
+                                            "op": "∧",
+                                            "right": "coup4"
+                                        },
+                                        "op": "∧",
+                                        "right": "coup5"
+                                    },
+                                    "op": "∧",
+                                    "right": "coup6"
+                                },
+                                "op": "¬"
+                            },
+                            "op": "¬"
+                        }
+                    },
+                    "location": "l0"
+                }
+            ],
+            "initial-locations": [
+                "l0"
+            ],
+            "locations": [
+                {
+                    "name": "l19",
+                    "transient-values": []
+                },
+                {
+                    "name": "l18",
+                    "transient-values": []
+                },
+                {
+                    "name": "l17",
+                    "transient-values": []
+                },
+                {
+                    "name": "l16",
+                    "transient-values": []
+                },
+                {
+                    "name": "l15",
+                    "transient-values": []
+                },
+                {
+                    "name": "l14",
+                    "transient-values": []
+                },
+                {
+                    "name": "l13",
+                    "transient-values": []
+                },
+                {
+                    "name": "l12",
+                    "transient-values": []
+                },
+                {
+                    "name": "l11",
+                    "transient-values": []
+                },
+                {
+                    "name": "l10",
+                    "transient-values": []
+                },
+                {
+                    "name": "l9",
+                    "transient-values": []
+                },
+                {
+                    "name": "l8",
+                    "transient-values": []
+                },
+                {
+                    "name": "l7",
+                    "transient-values": []
+                },
+                {
+                    "name": "l6",
+                    "transient-values": []
+                },
+                {
+                    "name": "l5",
+                    "transient-values": []
+                },
+                {
+                    "name": "l4",
+                    "transient-values": []
+                },
+                {
+                    "name": "l3",
+                    "transient-values": []
+                },
+                {
+                    "name": "l2",
+                    "transient-values": []
+                },
+                {
+                    "name": "l1",
+                    "transient-values": [
+                        {
+                            "ref": "_ret0_",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "l0",
+                    "transient-values": []
+                }
+            ],
+            "name": "main",
+            "variables": [
+                {
+                    "initial-value": false,
+                    "name": "coup6",
+                    "transient": false,
+                    "type": "bool"
+                },
+                {
+                    "initial-value": 0,
+                    "name": "draw2",
+                    "transient": false,
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 6
+                    }
+                },
+                {
+                    "initial-value": false,
+                    "name": "coup5",
+                    "transient": false,
+                    "type": "bool"
+                },
+                {
+                    "initial-value": 0,
+                    "name": "draw1",
+                    "transient": false,
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 6
+                    }
+                },
+                {
+                    "initial-value": false,
+                    "name": "coup4",
+                    "transient": false,
+                    "type": "bool"
+                },
+                {
+                    "initial-value": 0,
+                    "name": "draw0",
+                    "transient": false,
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 6
+                    }
+                },
+                {
+                    "initial-value": false,
+                    "name": "coup3",
+                    "transient": false,
+                    "type": "bool"
+                },
+                {
+                    "initial-value": false,
+                    "name": "coup2",
+                    "transient": false,
+                    "type": "bool"
+                },
+                {
+                    "initial-value": false,
+                    "name": "coup1",
+                    "transient": false,
+                    "type": "bool"
+                },
+                {
+                    "initial-value": false,
+                    "name": "coup0",
+                    "transient": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "constants": [],
+    "jani-version": 1,
+    "name": "program_graph",
+    "restrict-initial": {
+        "exp": true
+    },
+    "system": {
+        "elements": [
+            {
+                "automaton": "main"
+            }
+        ]
+    },
+    "type": "mdp",
+    "variables": [
+        {
+            "initial-value": 0,
+            "name": "numberDraws",
+            "transient": true,
+            "type": "int"
+        },
+        {
+            "initial-value": false,
+            "name": "_ret0_",
+            "transient": true,
+            "type": "bool"
+        }
+    ]
+}
