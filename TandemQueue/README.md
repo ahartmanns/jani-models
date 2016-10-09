@@ -25,7 +25,7 @@ Rare event analysis
     - TRANSIENT ("probability of rare event before stop event")
     - RATE      ("steady-state probability of rare event")
 - _Rare event_: packets bouncing on q2.
-- _Stopping events_ (TRANSIENT): q2 becoming empty.
-- _Reference events_ (RATE): any system transition.
+- _Stop event_ (TRANSIENT): q2 becoming empty.
+- _Reference event_ (RATE): any system transition.
 
 
