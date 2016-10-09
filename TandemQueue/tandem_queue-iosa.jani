@@ -1,0 +1,748 @@
+{
+	"actions" : 
+	[
+		{
+			"name" : "P0"
+		},
+		{
+			"name" : "P1"
+		},
+		{
+			"name" : "P2"
+		}
+	],
+	"automata" : 
+	[
+		{
+			"edges" : 
+			[
+				{
+					"action" : "P0",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clk0",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clk0",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : true,
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clk0",
+								"op" : "≥",
+								"right" : "x_clk0"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : true,
+							"op" : "⇒",
+							"right" : 
+							{
+								"left" : "clk0",
+								"op" : "≤",
+								"right" : "x_clk0"
+							}
+						}
+					}
+				}
+			],
+			"name" : "Arrivals",
+			"variables" : 
+			[
+				{
+					"initial-value" : 0,
+					"name" : "clk0",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clk0",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "P0",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q1",
+									"value" : 
+									{
+										"left" : "q1",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clk1",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clk1",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "q1",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P0",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q1",
+									"value" : 
+									{
+										"left" : "q1",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "q1",
+								"op" : ">",
+								"right" : 0
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "q1",
+								"op" : "<",
+								"right" : "c"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P0",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "q1",
+							"op" : "=",
+							"right" : "c"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P1",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q1",
+									"value" : 
+									{
+										"left" : "q1",
+										"op" : "-",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "q1",
+								"op" : "=",
+								"right" : 1
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clk1",
+								"op" : "≥",
+								"right" : "x_clk1"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P1",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q1",
+									"value" : 
+									{
+										"left" : "q1",
+										"op" : "-",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clk1",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clk1",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "q1",
+								"op" : ">",
+								"right" : 1
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clk1",
+								"op" : "≥",
+								"right" : "x_clk1"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "q1",
+									"op" : "=",
+									"right" : 1
+								},
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clk1",
+									"op" : "≤",
+									"right" : "x_clk1"
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : 
+								{
+									"left" : "q1",
+									"op" : ">",
+									"right" : 1
+								},
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clk1",
+									"op" : "≤",
+									"right" : "x_clk1"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "Queue1",
+			"variables" : 
+			[
+				{
+					"initial-value" : 0,
+					"name" : "q1",
+					"type" : 
+					{
+						"base" : "int",
+						"kind" : "bounded",
+						"lower-bound" : 0,
+						"upper-bound" : "c"
+					}
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clk1",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clk1",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "P1",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q2",
+									"value" : 
+									{
+										"left" : "q2",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clk2",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clk2",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "q2",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P1",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q2",
+									"value" : 
+									{
+										"left" : "q2",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "q2",
+								"op" : ">",
+								"right" : 0
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "q2",
+								"op" : "<",
+								"right" : "c"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P1",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "q2",
+							"op" : "=",
+							"right" : "c"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P2",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q2",
+									"value" : 
+									{
+										"left" : "q2",
+										"op" : "-",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "q2",
+								"op" : "=",
+								"right" : 1
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clk2",
+								"op" : "≥",
+								"right" : "x_clk2"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "P2",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "q2",
+									"value" : 
+									{
+										"left" : "q2",
+										"op" : "-",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clk2",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clk2",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "q2",
+								"op" : ">",
+								"right" : 1
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clk2",
+								"op" : "≥",
+								"right" : "x_clk2"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "q2",
+									"op" : "=",
+									"right" : 1
+								},
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clk2",
+									"op" : "≤",
+									"right" : "x_clk2"
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : 
+								{
+									"left" : "q2",
+									"op" : ">",
+									"right" : 1
+								},
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clk2",
+									"op" : "≤",
+									"right" : "x_clk2"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "Queue2",
+			"variables" : 
+			[
+				{
+					"initial-value" : 1,
+					"name" : "q2",
+					"type" : 
+					{
+						"base" : "int",
+						"kind" : "bounded",
+						"lower-bound" : 0,
+						"upper-bound" : "c"
+					}
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clk2",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clk2",
+					"type" : "real"
+				}
+			]
+		}
+	],
+	"constants" : 
+	[
+		{
+			"name" : "c",
+			"type" : "int",
+			"value" : 8
+		},
+		{
+			"name" : "lambda",
+			"type" : "int",
+			"value" : 3
+		},
+		{
+			"name" : "mu1",
+			"type" : "int",
+			"value" : 2
+		},
+		{
+			"name" : "mu2",
+			"type" : "int",
+			"value" : 6
+		}
+	],
+	"features" : 
+	[
+		"derived-operators"
+	],
+	"jani-version" : 1,
+	"metadata" : 
+	{
+		"author" : "FIG translator",
+		"description" : "JANI file generated from IOSA model",
+		"version" : "Sun Oct  9 16:45:11 2016\n"
+	},
+	"name" : "tandem_queue.sa",
+	"system" : 
+	{
+		"elements" : 
+		[
+			{
+				"automaton" : "Arrivals"
+			},
+			{
+				"automaton" : "Queue1",
+				"input-enable" : 
+				[
+					"P0"
+				]
+			},
+			{
+				"automaton" : "Queue2",
+				"input-enable" : 
+				[
+					"P1"
+				]
+			}
+		],
+		"syncs" : 
+		[
+			{
+				"result" : "P0",
+				"synchronise" : 
+				[
+					"P0",
+					"P0",
+					null
+				]
+			},
+			{
+				"result" : "P1",
+				"synchronise" : 
+				[
+					null,
+					"P1",
+					"P1"
+				]
+			}
+		]
+	},
+	"type" : "sta"
+}
