@@ -697,9 +697,63 @@
 	{
 		"author" : "FIG translator",
 		"description" : "JANI file generated from IOSA model",
-		"version" : "Sun Oct  9 16:45:11 2016\n"
+		"version" : "Mon Oct 10 12:15:26 2016\n"
 	},
 	"name" : "tandem_queue.sa",
+	"properties" : 
+	[
+		{
+			"expression" : 
+			{
+				"fun" : "max",
+				"op" : "filter",
+				"states" : "initial",
+				"values" : 
+				{
+					"exp" : 
+					{
+						"left" : 
+						{
+							"left" : "q2",
+							"op" : ">",
+							"right" : 0
+						},
+						"op" : "W",
+						"right" : 
+						{
+							"left" : "q2",
+							"op" : "=",
+							"right" : "c"
+						}
+					},
+					"op" : "Pmax"
+				}
+			},
+			"name" : "Transient_0"
+		},
+		{
+			"expression" : 
+			{
+				"fun" : "max",
+				"op" : "filter",
+				"states" : "initial",
+				"values" : 
+				{
+					"values" : 
+					{
+						"exp" : 
+						{
+							"left" : "q2",
+							"op" : "=",
+							"right" : "c"
+						},
+						"op" : "Smax"
+					}
+				}
+			},
+			"name" : "Rate_0"
+		}
+	],
 	"system" : 
 	{
 		"elements" : 
