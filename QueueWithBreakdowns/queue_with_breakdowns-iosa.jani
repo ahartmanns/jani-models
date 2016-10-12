@@ -4095,9 +4095,43 @@
 	{
 		"author" : "FIG translator",
 		"description" : "JANI file generated from IOSA model",
-		"version" : "Sun Oct  9 16:51:12 2016\n"
+		"version" : "Wed Oct 12 19:50:44 2016\n"
 	},
 	"name" : "queues_with_breakdowns.sa",
+	"properties" : 
+	[
+		{
+			"expression" : 
+			{
+				"fun" : "max",
+				"op" : "filter",
+				"states" : 
+				{
+					"op" : "initial"
+				},
+				"values" : 
+				{
+					"exp" : 
+					{
+						"left" : 
+						{
+							"exp" : "reset",
+							"op" : "¬"
+						},
+						"op" : "U",
+						"right" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"op" : "Pmax"
+				}
+			},
+			"name" : "Transient_0"
+		}
+	],
 	"system" : 
 	{
 		"elements" : 
