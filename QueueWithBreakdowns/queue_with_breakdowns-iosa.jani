@@ -1,0 +1,4361 @@
+{
+	"actions" : 
+	[
+		{
+			"name" : ""
+		},
+		{
+			"name" : "p11"
+		},
+		{
+			"name" : "p12"
+		},
+		{
+			"name" : "p13"
+		},
+		{
+			"name" : "p14"
+		},
+		{
+			"name" : "p15"
+		},
+		{
+			"name" : "p21"
+		},
+		{
+			"name" : "p22"
+		},
+		{
+			"name" : "p23"
+		},
+		{
+			"name" : "p24"
+		},
+		{
+			"name" : "p25"
+		}
+	],
+	"automata" : 
+	[
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on11",
+									"value" : false
+								},
+								{
+									"ref" : "clkR11",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR11",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on11",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF11",
+								"op" : "≥",
+								"right" : "x_clkF11"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on11",
+									"value" : true
+								},
+								{
+									"ref" : "clkF11",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF11",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta1"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP11",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP11",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on11",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR11",
+								"op" : "≥",
+								"right" : "x_clkR11"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p11",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP11",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP11",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on11",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP11",
+								"op" : "≥",
+								"right" : "x_clkP11"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on11",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF11",
+										"op" : "≤",
+										"right" : "x_clkF11"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on11",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR11",
+										"op" : "≤",
+										"right" : "x_clkR11"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on11",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP11",
+									"op" : "≤",
+									"right" : "x_clkP11"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T1S1",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on11",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF11",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF11",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR11",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR11",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP11",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP11",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on12",
+									"value" : false
+								},
+								{
+									"ref" : "clkR12",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR12",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on12",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF12",
+								"op" : "≥",
+								"right" : "x_clkF12"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on12",
+									"value" : true
+								},
+								{
+									"ref" : "clkF12",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF12",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta1"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP12",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP12",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on12",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR12",
+								"op" : "≥",
+								"right" : "x_clkR12"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p12",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP12",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP12",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on12",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP12",
+								"op" : "≥",
+								"right" : "x_clkP12"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on12",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF12",
+										"op" : "≤",
+										"right" : "x_clkF12"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on12",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR12",
+										"op" : "≤",
+										"right" : "x_clkR12"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on12",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP12",
+									"op" : "≤",
+									"right" : "x_clkP12"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T1S2",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on12",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF12",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF12",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR12",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR12",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP12",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP12",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on13",
+									"value" : false
+								},
+								{
+									"ref" : "clkR13",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR13",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on13",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF13",
+								"op" : "≥",
+								"right" : "x_clkF13"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on13",
+									"value" : true
+								},
+								{
+									"ref" : "clkF13",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF13",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta1"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP13",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP13",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on13",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR13",
+								"op" : "≥",
+								"right" : "x_clkR13"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p13",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP13",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP13",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on13",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP13",
+								"op" : "≥",
+								"right" : "x_clkP13"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on13",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF13",
+										"op" : "≤",
+										"right" : "x_clkF13"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on13",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR13",
+										"op" : "≤",
+										"right" : "x_clkR13"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on13",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP13",
+									"op" : "≤",
+									"right" : "x_clkP13"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T1S3",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on13",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF13",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF13",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR13",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR13",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP13",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP13",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on14",
+									"value" : false
+								},
+								{
+									"ref" : "clkR14",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR14",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on14",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF14",
+								"op" : "≥",
+								"right" : "x_clkF14"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on14",
+									"value" : true
+								},
+								{
+									"ref" : "clkF14",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF14",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta1"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP14",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP14",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on14",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR14",
+								"op" : "≥",
+								"right" : "x_clkR14"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p14",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP14",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP14",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on14",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP14",
+								"op" : "≥",
+								"right" : "x_clkP14"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on14",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF14",
+										"op" : "≤",
+										"right" : "x_clkF14"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on14",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR14",
+										"op" : "≤",
+										"right" : "x_clkR14"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on14",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP14",
+									"op" : "≤",
+									"right" : "x_clkP14"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T1S4",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on14",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF14",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF14",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR14",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR14",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP14",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP14",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on15",
+									"value" : false
+								},
+								{
+									"ref" : "clkR15",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR15",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on15",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF15",
+								"op" : "≥",
+								"right" : "x_clkF15"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on15",
+									"value" : true
+								},
+								{
+									"ref" : "clkF15",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF15",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta1"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP15",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP15",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on15",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR15",
+								"op" : "≥",
+								"right" : "x_clkR15"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p15",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP15",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP15",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda1"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on15",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP15",
+								"op" : "≥",
+								"right" : "x_clkP15"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on15",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF15",
+										"op" : "≤",
+										"right" : "x_clkF15"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on15",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR15",
+										"op" : "≤",
+										"right" : "x_clkR15"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on15",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP15",
+									"op" : "≤",
+									"right" : "x_clkP15"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T1S5",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on15",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF15",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF15",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR15",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR15",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP15",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP15",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on21",
+									"value" : false
+								},
+								{
+									"ref" : "clkR21",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR21",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on21",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF21",
+								"op" : "≥",
+								"right" : "x_clkF21"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on21",
+									"value" : true
+								},
+								{
+									"ref" : "clkF21",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF21",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta2"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP21",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP21",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on21",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR21",
+								"op" : "≥",
+								"right" : "x_clkR21"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p21",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP21",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP21",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on21",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP21",
+								"op" : "≥",
+								"right" : "x_clkP21"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on21",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF21",
+										"op" : "≤",
+										"right" : "x_clkF21"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on21",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR21",
+										"op" : "≤",
+										"right" : "x_clkR21"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on21",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP21",
+									"op" : "≤",
+									"right" : "x_clkP21"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T2S1",
+			"variables" : 
+			[
+				{
+					"initial-value" : true,
+					"name" : "on21",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF21",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF21",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR21",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR21",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP21",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP21",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on22",
+									"value" : false
+								},
+								{
+									"ref" : "clkR22",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR22",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on22",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF22",
+								"op" : "≥",
+								"right" : "x_clkF22"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on22",
+									"value" : true
+								},
+								{
+									"ref" : "clkF22",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF22",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta2"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP22",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP22",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on22",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR22",
+								"op" : "≥",
+								"right" : "x_clkR22"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p22",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP22",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP22",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on22",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP22",
+								"op" : "≥",
+								"right" : "x_clkP22"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on22",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF22",
+										"op" : "≤",
+										"right" : "x_clkF22"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on22",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR22",
+										"op" : "≤",
+										"right" : "x_clkR22"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on22",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP22",
+									"op" : "≤",
+									"right" : "x_clkP22"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T2S2",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on22",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF22",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF22",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR22",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR22",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP22",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP22",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on23",
+									"value" : false
+								},
+								{
+									"ref" : "clkR23",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR23",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on23",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF23",
+								"op" : "≥",
+								"right" : "x_clkF23"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on23",
+									"value" : true
+								},
+								{
+									"ref" : "clkF23",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF23",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta2"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP23",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP23",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on23",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR23",
+								"op" : "≥",
+								"right" : "x_clkR23"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p23",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP23",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP23",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on23",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP23",
+								"op" : "≥",
+								"right" : "x_clkP23"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on23",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF23",
+										"op" : "≤",
+										"right" : "x_clkF23"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on23",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR23",
+										"op" : "≤",
+										"right" : "x_clkR23"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on23",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP23",
+									"op" : "≤",
+									"right" : "x_clkP23"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T2S3",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on23",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF23",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF23",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR23",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR23",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP23",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP23",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on24",
+									"value" : false
+								},
+								{
+									"ref" : "clkR24",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR24",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on24",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF24",
+								"op" : "≥",
+								"right" : "x_clkF24"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on24",
+									"value" : true
+								},
+								{
+									"ref" : "clkF24",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF24",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta2"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP24",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP24",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on24",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR24",
+								"op" : "≥",
+								"right" : "x_clkR24"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p24",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP24",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP24",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on24",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP24",
+								"op" : "≥",
+								"right" : "x_clkP24"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on24",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF24",
+										"op" : "≤",
+										"right" : "x_clkF24"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on24",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR24",
+										"op" : "≤",
+										"right" : "x_clkR24"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on24",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP24",
+									"op" : "≤",
+									"right" : "x_clkP24"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T2S4",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on24",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF24",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF24",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR24",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR24",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP24",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP24",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on25",
+									"value" : false
+								},
+								{
+									"ref" : "clkR25",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR25",
+									"value" : 
+									{
+										"args" : 
+										[
+											"alpha2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on25",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF25",
+								"op" : "≥",
+								"right" : "x_clkF25"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on25",
+									"value" : true
+								},
+								{
+									"ref" : "clkF25",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF25",
+									"value" : 
+									{
+										"args" : 
+										[
+											"beta2"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP25",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP25",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on25",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR25",
+								"op" : "≥",
+								"right" : "x_clkR25"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p25",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "clkP25",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP25",
+									"value" : 
+									{
+										"args" : 
+										[
+											"lambda2"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on25",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP25",
+								"op" : "≥",
+								"right" : "x_clkP25"
+							}
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : "on25",
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkF25",
+										"op" : "≤",
+										"right" : "x_clkF25"
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"exp" : "on25",
+										"op" : "¬"
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkR25",
+										"op" : "≤",
+										"right" : "x_clkR25"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "on25",
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP25",
+									"op" : "≤",
+									"right" : "x_clkP25"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "T2S5",
+			"variables" : 
+			[
+				{
+					"initial-value" : false,
+					"name" : "on25",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF25",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF25",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR25",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR25",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP25",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP25",
+					"type" : "real"
+				}
+			]
+		},
+		{
+			"edges" : 
+			[
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on",
+									"value" : false
+								},
+								{
+									"ref" : "clkR",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkR",
+									"value" : 
+									{
+										"args" : 
+										[
+											"delta"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "on",
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkF",
+								"op" : "≥",
+								"right" : "x_clkF"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "on",
+									"value" : true
+								},
+								{
+									"ref" : "clkF",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkF",
+									"value" : 
+									{
+										"args" : 
+										[
+											"gama"
+										],
+										"distribution" : "Exponential"
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"exp" : "on",
+								"op" : "¬"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkR",
+								"op" : "≥",
+								"right" : "x_clkR"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "-",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "on",
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : "buf",
+									"op" : ">",
+									"right" : 1
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP",
+								"op" : "≥",
+								"right" : "x_clkP"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "-",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "reset",
+									"value" : true
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : "on",
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : "buf",
+									"op" : "=",
+									"right" : 1
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "clkP",
+								"op" : "≥",
+								"right" : "x_clkP"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p11",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p11",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p11",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p12",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p12",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p12",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p13",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p13",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p13",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p14",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p14",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p14",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p15",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p15",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p15",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p21",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p21",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p21",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p22",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p22",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p22",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p23",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p23",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p23",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p24",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p24",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p24",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p25",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								},
+								{
+									"ref" : "clkP",
+									"value" : 0
+								},
+								{
+									"ref" : "x_clkP",
+									"value" : 
+									{
+										"args" : 
+										[
+											"mu"
+										],
+										"distribution" : "Exponential"
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : 0
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p25",
+					"destinations" : 
+					[
+						{
+							"assignments" : 
+							[
+								{
+									"ref" : "buf",
+									"value" : 
+									{
+										"left" : "buf",
+										"op" : "+",
+										"right" : 1
+									}
+								}
+							],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 0,
+								"op" : "<",
+								"right" : "buf"
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : "buf",
+								"op" : "<",
+								"right" : "K"
+							}
+						}
+					},
+					"location" : "location"
+				},
+				{
+					"action" : "p25",
+					"destinations" : 
+					[
+						{
+							"assignments" : [],
+							"location" : "location"
+						}
+					],
+					"guard" : 
+					{
+						"exp" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"location" : "location"
+				}
+			],
+			"initial-locations" : 
+			[
+				"location"
+			],
+			"locations" : 
+			[
+				{
+					"name" : "location",
+					"time-progress" : 
+					{
+						"exp" : 
+						{
+							"left" : 
+							{
+								"left" : 
+								{
+									"left" : 
+									{
+										"left" : "on",
+										"op" : "⇒",
+										"right" : 
+										{
+											"left" : "clkF",
+											"op" : "≤",
+											"right" : "x_clkF"
+										}
+									},
+									"op" : "∧",
+									"right" : 
+									{
+										"left" : 
+										{
+											"exp" : "on",
+											"op" : "¬"
+										},
+										"op" : "⇒",
+										"right" : 
+										{
+											"left" : "clkR",
+											"op" : "≤",
+											"right" : "x_clkR"
+										}
+									}
+								},
+								"op" : "∧",
+								"right" : 
+								{
+									"left" : 
+									{
+										"left" : "on",
+										"op" : "∧",
+										"right" : 
+										{
+											"left" : "buf",
+											"op" : ">",
+											"right" : 1
+										}
+									},
+									"op" : "⇒",
+									"right" : 
+									{
+										"left" : "clkP",
+										"op" : "≤",
+										"right" : "x_clkP"
+									}
+								}
+							},
+							"op" : "∧",
+							"right" : 
+							{
+								"left" : 
+								{
+									"left" : "on",
+									"op" : "∧",
+									"right" : 
+									{
+										"left" : "buf",
+										"op" : "=",
+										"right" : 1
+									}
+								},
+								"op" : "⇒",
+								"right" : 
+								{
+									"left" : "clkP",
+									"op" : "≤",
+									"right" : "x_clkP"
+								}
+							}
+						}
+					}
+				}
+			],
+			"name" : "BufferedServer",
+			"variables" : 
+			[
+				{
+					"initial-value" : 1,
+					"name" : "buf",
+					"type" : 
+					{
+						"base" : "int",
+						"kind" : "bounded",
+						"lower-bound" : 0,
+						"upper-bound" : "K"
+					}
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkF",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkF",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkR",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkR",
+					"type" : "real"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "clkP",
+					"type" : "clock"
+				},
+				{
+					"initial-value" : 0,
+					"name" : "x_clkP",
+					"type" : "real"
+				},
+				{
+					"initial-value" : false,
+					"name" : "on",
+					"type" : "bool"
+				},
+				{
+					"initial-value" : false,
+					"name" : "reset",
+					"type" : "bool"
+				}
+			]
+		}
+	],
+	"constants" : 
+	[
+		{
+			"name" : "lambda1",
+			"type" : "int",
+			"value" : 3
+		},
+		{
+			"name" : "alpha1",
+			"type" : "int",
+			"value" : 3
+		},
+		{
+			"name" : "beta1",
+			"type" : "int",
+			"value" : 2
+		},
+		{
+			"name" : "lambda2",
+			"type" : "int",
+			"value" : 6
+		},
+		{
+			"name" : "alpha2",
+			"type" : "int",
+			"value" : 1
+		},
+		{
+			"name" : "beta2",
+			"type" : "int",
+			"value" : 4
+		},
+		{
+			"name" : "mu",
+			"type" : "int",
+			"value" : 100
+		},
+		{
+			"name" : "delta",
+			"type" : "int",
+			"value" : 4
+		},
+		{
+			"name" : "gama",
+			"type" : "int",
+			"value" : 3
+		},
+		{
+			"name" : "K",
+			"type" : "int",
+			"value" : 40
+		}
+	],
+	"features" : 
+	[
+		"derived-operators"
+	],
+	"jani-version" : 1,
+	"metadata" : 
+	{
+		"author" : "FIG translator",
+		"description" : "JANI file generated from IOSA model",
+		"version" : "Wed Oct 12 19:50:44 2016\n"
+	},
+	"name" : "queues_with_breakdowns.sa",
+	"properties" : 
+	[
+		{
+			"expression" : 
+			{
+				"fun" : "max",
+				"op" : "filter",
+				"states" : 
+				{
+					"op" : "initial"
+				},
+				"values" : 
+				{
+					"exp" : 
+					{
+						"left" : 
+						{
+							"exp" : "reset",
+							"op" : "¬"
+						},
+						"op" : "U",
+						"right" : 
+						{
+							"left" : "buf",
+							"op" : "=",
+							"right" : "K"
+						}
+					},
+					"op" : "Pmax"
+				}
+			},
+			"name" : "Transient_0"
+		}
+	],
+	"system" : 
+	{
+		"elements" : 
+		[
+			{
+				"automaton" : "BufferedServer",
+				"input-enable" : 
+				[
+					"p11",
+					"p12",
+					"p13",
+					"p14",
+					"p15",
+					"p21",
+					"p22",
+					"p23",
+					"p24",
+					"p25"
+				]
+			},
+			{
+				"automaton" : "T1S1"
+			},
+			{
+				"automaton" : "T1S2"
+			},
+			{
+				"automaton" : "T1S3"
+			},
+			{
+				"automaton" : "T1S4"
+			},
+			{
+				"automaton" : "T1S5"
+			},
+			{
+				"automaton" : "T2S1"
+			},
+			{
+				"automaton" : "T2S2"
+			},
+			{
+				"automaton" : "T2S3"
+			},
+			{
+				"automaton" : "T2S4"
+			},
+			{
+				"automaton" : "T2S5"
+			}
+		],
+		"syncs" : 
+		[
+			{
+				"result" : "p11",
+				"synchronise" : 
+				[
+					"p11",
+					"p11",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p12",
+				"synchronise" : 
+				[
+					"p12",
+					null,
+					"p12",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p13",
+				"synchronise" : 
+				[
+					"p13",
+					null,
+					null,
+					"p13",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p14",
+				"synchronise" : 
+				[
+					"p14",
+					null,
+					null,
+					null,
+					"p14",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p15",
+				"synchronise" : 
+				[
+					"p15",
+					null,
+					null,
+					null,
+					null,
+					"p15",
+					null,
+					null,
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p21",
+				"synchronise" : 
+				[
+					"p21",
+					null,
+					null,
+					null,
+					null,
+					null,
+					"p21",
+					null,
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p22",
+				"synchronise" : 
+				[
+					"p22",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					"p22",
+					null,
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p23",
+				"synchronise" : 
+				[
+					"p23",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					"p23",
+					null,
+					null
+				]
+			},
+			{
+				"result" : "p24",
+				"synchronise" : 
+				[
+					"p24",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					"p24",
+					null
+				]
+			},
+			{
+				"result" : "p25",
+				"synchronise" : 
+				[
+					"p25",
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					"p25"
+				]
+			}
+		]
+	},
+	"type" : "sta"
+}
