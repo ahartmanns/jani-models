@@ -24,7 +24,7 @@ The system consists of:
 - 2 Types of disk **Controllers**,
 - 6 **Disk** clusters.
 
-For redundancy _R_ = 2, 3, ..., there are _R_ components of each type
+For redundancy **R** = 2, 3, ..., there are _R_ components of each type
 of Processor and Controller, and _R_+2 Disks on each disk cluster.<br>
 Processors, Controllers and Disks break down at various rates. For the
 system's _basic mean failure time_, **MFT**, the mean time to failure of
