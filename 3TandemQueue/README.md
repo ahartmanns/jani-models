@@ -26,10 +26,10 @@ the Erlang service times at the first, second, and third queue resp.
 
 Experiments
 -----------
-### Property '_Rate_0_'
+### Property '*Rate_0*'
 
 |  L | alpha | beta1 | beta2 | beta3 | Results |
-|----|-------|-------|-------|-------|---------|
+|---:|:-----:|------:|------:|------:|:-------:|
 | 10 |   2   |  3.0  |  4.0  |  6.0  | 1.28e-8 |
 |  7 |  3    |  4.5  |  6.0  |  9.0  | 6.45e-8 |
 | 11 |   2   |  6.0  |  4.0  |  6.0  | 1.10e-8 |
@@ -43,12 +43,12 @@ Rare event analysis
 
 - _Initial state_: all queues empty.
 - _Properties_:
-    - RATE: S( rare), "steady-state probability of rare event".
+    - RATE: S( rare ), "steady-state probability of rare event".
 - _Rare event_: reach threshold occupancy 'L' in 'q3'
 - _Reference event_: any system transition.
 
 Bilbiography
 ------------
 _RESTART simulation of networks of queues with Erlang service times_,
-José Villén-Altamirano, Winter Simulation Conference, 2009, pp. 1146-1154.
-This model corresponds to the system described in Section 4.1
+José Villén-Altamirano, Winter Simulation Conference, 2009, pp. 1146--1154.<br>
+This model corresponds to the system described in Section 4.1.

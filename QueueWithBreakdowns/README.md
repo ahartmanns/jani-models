@@ -42,14 +42,14 @@ Rare event analysis
 - _Initial state_: the Buffer has a single customer, the Server is down,
   and all Sources are also down except one of Type _2_.
 - _Properties_:
-    - TRANSIENT: P( !stop U rare), "probability of rare event before stop event";
+    - TRANSIENT: P( !stop U rare ), "probability of rare event before stop event";
 - _Rare event_: buffer reaching full capacity K.
 - _Stop event_: empty buffer.
 
 Bilbiography
 ------------
 _Efficient estimation of overflow probabilities in queues
-with breakdowns_, D. P. Kroese & V. F. Nicola,Performance Evaluation,
-36-37, 1999, pp. 471-484.
-This model corresponds to the system described in Section 4.4
+with breakdowns_, D. P. Kroese & V. F. Nicola, Performance Evaluation,
+36-37, 1999, pp. 471--484.<br>
+This model corresponds to the system described in Section 4.4.
 
