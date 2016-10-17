@@ -53,6 +53,7 @@ Bibliography
 Marnix Garvels' PhD Thesis: _The splitting method in rare event simulation_,
 2000.<br>
 In p. 85 the model is studied for (lambda,mu1,mu2) = (3,2,6) and queue
-capacities c=10,20,30.  In p. 61 the model is studied for (lambda,mu1,mu2)
-= (1,4,2) and queue capacities c=20,60.
+capacities c=10,20,30.<br>
+In p. 61 the model is studied for (lambda,mu1,mu2) = (1,4,2) and queue
+capacities c=20,60.
 
