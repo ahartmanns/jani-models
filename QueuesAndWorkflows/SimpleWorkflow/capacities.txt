@@ -1,0 +1,9 @@
+Server0available 1
+S0WorkingPhase1 1
+S0WorkingPhase2 1
+Server1available 1
+S1WorkingPhase1 1
+S1WorkingPhase2 1
+P0 20
+Incoming 10
+Jobs 20

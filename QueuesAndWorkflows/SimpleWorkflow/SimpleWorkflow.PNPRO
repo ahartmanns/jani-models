@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This project file has been saved by the New GreatSPN Editor, v.100 --><project name="New project" version="121">
+  <gspn name="GSPN" show-color-cmd="false" show-fluid-cmd="false">
+    <nodes>
+      <place label-y="-2.0" marking="1" name="Server0available" x="11.0" y="5.0"/>
+      <place marking="10" name="Incoming" x="2.0" y="11.0"/>
+      <place name="Jobs" x="11.0" y="11.0"/>
+      <place label-x="-0.5" label-y="-2.0" name="S0WorkingPhase1" x="19.0" y="5.0"/>
+      <place label-x="1.0" label-y="2.0" marking="1" name="Server1available" x="10.0" y="16.0"/>
+      <transition name="t0" type="IMM" x="15.85" y="8.0"/>
+      <transition name="t1" type="IMM" x="15.85" y="14.0"/>
+      <place label-y="-2.0" name="S0WorkingPhase2" x="28.0" y="5.0"/>
+      <transition name="T0" nservers-x="0.5" type="EXP" x="23.55" y="5.0"/>
+      <transition name="T1" nservers-x="0.5" type="EXP" x="32.55" y="5.0"/>
+      <place name="P0" x="38.0" y="11.0"/>
+      <place label-x="-0.5" label-y="2.5" name="S1WorkingPhase1" x="19.0" y="16.0"/>
+      <place label-y="2.5" name="S1WorkingPhase2" x="29.0" y="16.0"/>
+      <transition delay="3.0" label-y="2.5" name="T3" nservers-x="0.5" type="EXP" x="24.55" y="16.0"/>
+      <transition label-x="0.5" label-y="2.5" name="T4" nservers-x="0.5" type="EXP" x="33.55" y="16.0"/>
+      <transition delay="0.4" name="T2" nservers-x="0.5" type="EXP" x="6.55" y="11.0"/>
+    </nodes>
+    <edges>
+      <arc head="t0" kind="INPUT" tail="Jobs"/>
+      <arc head="t0" kind="INPUT" tail="Server0available"/>
+      <arc head="S0WorkingPhase1" kind="OUTPUT" tail="t0"/>
+      <arc head="T0" kind="INPUT" tail="S0WorkingPhase1"/>
+      <arc head="S0WorkingPhase2" kind="OUTPUT" tail="T0"/>
+      <arc head="t1" kind="INPUT" tail="Jobs"/>
+      <arc head="T1" kind="INPUT" tail="S0WorkingPhase2"/>
+      <arc head="P0" kind="OUTPUT" tail="T1"/>
+      <arc head="Server0available" kind="OUTPUT" mult-k="0.7895507812500001" tail="T1">
+        <point x="37.0" y="2.5"/>
+        <point x="5.0" y="2.5"/>
+      </arc>
+      <arc head="T3" kind="INPUT" tail="S1WorkingPhase1"/>
+      <arc head="S1WorkingPhase2" kind="OUTPUT" tail="T3"/>
+      <arc head="T4" kind="INPUT" tail="S1WorkingPhase2"/>
+      <arc head="P0" kind="OUTPUT" tail="T4"/>
+      <arc head="S1WorkingPhase1" kind="OUTPUT" tail="t1"/>
+      <arc head="Server1available" kind="OUTPUT" mult-k="1.6299804687500004" tail="T4">
+        <point x="38.0" y="20.5"/>
+        <point x="4.5" y="20.5"/>
+      </arc>
+      <arc head="t1" kind="INPUT" tail="Server1available"/>
+      <arc head="T2" kind="INPUT" tail="Incoming"/>
+      <arc head="Jobs" kind="OUTPUT" mult="2" mult-k="0.8850585937499998" mult-x="-1.224534393386989E-4" mult-y="-1.4999999999999982" tail="T2">
+        <point x="9.18798828125" y="12.0"/>
+      </arc>
+    </edges>
+  </gspn>
+</project>

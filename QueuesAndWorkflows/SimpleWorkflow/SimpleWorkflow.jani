@@ -1,0 +1,501 @@
+{
+    "actions": [],
+    "automata": [
+        {
+            "edges": [
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "Server0available",
+                                    "value": {
+                                        "left": "Server0available",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "Jobs",
+                                    "value": {
+                                        "left": "Jobs",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "S0WorkingPhase1",
+                                    "value": {
+                                        "left": "S0WorkingPhase1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": true,
+                                "op": "∧",
+                                "right": {
+                                    "left": "Jobs",
+                                    "op": ">",
+                                    "right": 1
+                                }
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "Server0available",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "Jobs",
+                                    "value": {
+                                        "left": "Jobs",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "Server1available",
+                                    "value": {
+                                        "left": "Server1available",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "S1WorkingPhase1",
+                                    "value": {
+                                        "left": "S1WorkingPhase1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": {
+                                "left": {
+                                    "left": {
+                                        "left": true,
+                                        "op": "∧",
+                                        "right": {
+                                            "left": "Jobs",
+                                            "op": ">",
+                                            "right": 1
+                                        }
+                                    },
+                                    "op": "∧",
+                                    "right": {
+                                        "left": "Server0available",
+                                        "op": ">",
+                                        "right": 1
+                                    }
+                                },
+                                "op": "∧",
+                                "right": {
+                                    "left": "Jobs",
+                                    "op": ">",
+                                    "right": 1
+                                }
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "Server1available",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc"
+                },
+                {
+                    "destinations": [],
+                    "guard": {
+                        "exp": false
+                    },
+                    "location": "loc"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "S0WorkingPhase1",
+                                    "value": {
+                                        "left": "S0WorkingPhase1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "S0WorkingPhase2",
+                                    "value": {
+                                        "left": "S0WorkingPhase2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": true,
+                            "op": "∧",
+                            "right": {
+                                "left": "S0WorkingPhase1",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "exp": 1
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "Server0available",
+                                    "value": {
+                                        "left": "Server0available",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "S0WorkingPhase2",
+                                    "value": {
+                                        "left": "S0WorkingPhase2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "P0",
+                                    "value": {
+                                        "left": "P0",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": true,
+                            "op": "∧",
+                            "right": {
+                                "left": "S0WorkingPhase2",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "exp": 1
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "S1WorkingPhase1",
+                                    "value": {
+                                        "left": "S1WorkingPhase1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "S1WorkingPhase2",
+                                    "value": {
+                                        "left": "S1WorkingPhase2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": true,
+                            "op": "∧",
+                            "right": {
+                                "left": "S1WorkingPhase1",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "exp": 3
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "Server1available",
+                                    "value": {
+                                        "left": "Server1available",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "P0",
+                                    "value": {
+                                        "left": "P0",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "S1WorkingPhase2",
+                                    "value": {
+                                        "left": "S1WorkingPhase2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": true,
+                            "op": "∧",
+                            "right": {
+                                "left": "S1WorkingPhase2",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "exp": 1
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "ref": "Incoming",
+                                    "value": {
+                                        "left": "Incoming",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "ref": "Jobs",
+                                    "value": {
+                                        "left": "Jobs",
+                                        "op": "+",
+                                        "right": 2
+                                    }
+                                }
+                            ],
+                            "location": "loc",
+                            "probability": {
+                                "exp": 1
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "exp": {
+                            "left": true,
+                            "op": "∧",
+                            "right": {
+                                "left": "Incoming",
+                                "op": ">",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "exp": 0.4
+                    }
+                }
+            ],
+            "initial-locations": [
+                "loc"
+            ],
+            "locations": [
+                {
+                    "name": "loc",
+                    "transient-values": []
+                }
+            ],
+            "name": "immediate",
+            "variables": []
+        }
+    ],
+    "constants": [],
+    "jani-version": 1,
+    "name": "GSPN",
+    "restrict-initial": {
+        "exp": true
+    },
+    "system": {
+        "elements": [
+            {
+                "automaton": "immediate"
+            }
+        ]
+    },
+    "type": "ma",
+    "variables": [
+        {
+            "initial-value": 1,
+            "name": "Server0available",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 10,
+            "name": "Incoming",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 10
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "Jobs",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 20
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "S0WorkingPhase1",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "Server1available",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "S0WorkingPhase2",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "P0",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 20
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "S1WorkingPhase1",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "S1WorkingPhase2",
+            "transient": false,
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        }
+    ]
+}
