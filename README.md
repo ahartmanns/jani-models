@@ -5,21 +5,13 @@ A library of formal models in the jani-model format.
 
 |        Model        | Type |     Origin     | Brief description        |
 |--------------------:|:----:|:--------------:|:-------------------------|
-| CouponCollector     | MDP  | Storm: PGCL    | Draw coupons from an urn as described <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">in Wikipedia</a> |
-| QueuesAndWorkflows  | MDP  | Storm: GSPN    | Two parallel servers     |
-| QueueWithBreakdowns | STA  | FIG: IOSA      | Parallel sources feed a limited buffer; sources and server can fail and get repaired |
-| TandemQueue         | STA  | FIG: IOSA      | Two sequentially-connected queues with limited capacity |
+| RandomWalk          | DTMC | PRISM: DTMC    | Unidimensional random walk with steps of size 1 or 2. |
+| ApproxPi            | MDP  | Storm: PGCL    | A Monte Carlo based approach to approximate pi (parameterized). |
+| beb-modest          | MDP  | Modest: MODEST | Bounded Exponential Backoff protocol implementation. |
+| CouponCollector     | MDP  | Storm: PGCL    | Draw coupons from an urn as described <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">in Wikipedia</a>. |
+| QueuesAndWorkflows  | MDP  | Storm: GSPN    | Two parallel servers.    |
+| Database            | STA  | FIG: IOSA      | Repairman model of computing system with processors, disk controllers and disk clusters. |
+| QueueWithBreakdowns | STA  | FIG: IOSA      | Parallel sources feed a limited buffer; sources and server fail and get repaired. |
+| TandemQueue         | STA  | FIG: IOSA      | Two sequentially-connected queues with limited capacity. |
 | 3TandemQueue        | STA  | FIG: IOSA      | Three sequentially-connected queues with limited capacity (non-markovian) |
 
-<!---
-- **RandomWalk**: unidimensional random walk with steps of size 1 or 2.
-- **ApproxPi**: a Monte Carlo based approach to approximate Pi.
-- **CouponCollector**: draw coupons from an urn as described in https://en.wikipedia.org/wiki/Coupon_collector%27s_problem.
-- **TandemQueue**: two sequentially-connected queues with limited capacity.
-- **3TandemQueue**: three sequentially-connected queues with limited capacity
-    (non-markovian).
-- **QueueWithBreakdowns**: several sources produce items served in a single
-    buffer with limited capacity; sources and server can fail and get repaired.
-- **Database**: repairman model of a computing system with processors,
-    disk controllers and disk clusters.
--->
