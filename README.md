@@ -16,7 +16,7 @@ A library of formal models in the jani-model format.
 | <a href="https://github.com/ahartmanns/jani-models/tree/master/QueuesAndWorkflows">QueuesAndWorkflows</a> | MDP | Storm: GSPN | Two parallel servers. |
 | <a href="https://github.com/ahartmanns/jani-models/tree/master/Rabin">Rabin</a> | MDP | PRISM: MDP | Mutual exclusion protocol describing multiple processes accessing a shared resource, Rabin's version. |
 | <a href="https://github.com/ahartmanns/jani-models/tree/master/Database">Database</a> | STA | FIG: IOSA | Repairman model of computing system with processors, disk controllers and disk clusters. |
-| <a href="https://github.com/ahartmanns/jani-models/tree/master/QueuesWithBreakdowns">QueueWithBreakdowns</a> | STA | FIG: IOSA | Parallel sources feed a limited buffer; sources and server fail and get repaired. |
+| <a href="https://github.com/ahartmanns/jani-models/tree/master/QueueWithBreakdowns">QueueWithBreakdowns</a> | STA | FIG: IOSA | Parallel sources feed a limited buffer; sources and server fail and get repaired. |
 | <a href="https://github.com/ahartmanns/jani-models/tree/master/TandemQueue">TandemQueue</a> | STA | FIG: IOSA | Two sequentially-connected queues with limited capacity. |
-| <a href="https://github.com/ahartmanns/jani-models/tree/master/DiningCryptographers">3TandemQueue</a> | STA | FIG: IOSA | Three sequentially-connected queues with limited capacity (non-markovian) |
+| <a href="https://github.com/ahartmanns/jani-models/tree/master/3TandemQueue">3TandemQueue</a> | STA | FIG: IOSA | Three sequentially-connected queues with limited capacity (non-markovian) |
 
