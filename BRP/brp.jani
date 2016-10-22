@@ -159,7 +159,7 @@
             }
         },
         {
-            "name":"",
+            "name":"reward_",
             "type":"real",
             "initial-value":0.0,
             "transient":true
@@ -799,7 +799,7 @@
                                     "value":0
                                 },
                                 {
-                                    "ref":"",
+                                    "ref":"reward_",
                                     "value":{
                                         "op":"ite",
                                         "if":{
@@ -955,7 +955,7 @@
                                     }
                                 },
                                 {
-                                    "ref":"",
+                                    "ref":"reward_",
                                     "value":{
                                         "op":"ite",
                                         "if":{
