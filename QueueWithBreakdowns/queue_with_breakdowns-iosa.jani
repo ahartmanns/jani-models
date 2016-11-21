@@ -2,9 +2,6 @@
 	"actions" : 
 	[
 		{
-			"name" : ""
-		},
-		{
 			"name" : "p11"
 		},
 		{
@@ -41,7 +38,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -87,7 +83,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -296,7 +291,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -342,7 +336,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -551,7 +544,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -597,7 +589,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -806,7 +797,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -852,7 +842,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1061,7 +1050,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1107,7 +1095,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1316,7 +1303,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1362,7 +1348,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1571,7 +1556,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1617,7 +1601,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1826,7 +1809,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1872,7 +1854,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2081,7 +2062,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2127,7 +2107,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2336,7 +2315,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2382,7 +2360,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2591,7 +2568,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2637,7 +2613,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2702,7 +2677,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2763,7 +2737,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4095,7 +4068,7 @@
 	{
 		"author" : "FIG translator",
 		"description" : "JANI file generated from IOSA model",
-		"version" : "Wed Oct 12 19:50:44 2016\n"
+		"version" : "Mon Nov 21 16:10:09 2016\n"
 	},
 	"name" : "queues_with_breakdowns.sa",
 	"properties" : 

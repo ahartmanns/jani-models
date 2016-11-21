@@ -1,17 +1,11 @@
 {
-	"actions" : 
-	[
-		{
-			"name" : ""
-		}
-	],
+	"actions" : [],
 	"automata" : 
 	[
 		{
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -65,7 +59,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -119,7 +112,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -190,7 +182,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -423,7 +414,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -477,7 +467,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -531,7 +520,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -602,7 +590,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -835,7 +822,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -889,7 +875,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -943,7 +928,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1014,7 +998,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1247,7 +1230,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1301,7 +1283,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1355,7 +1336,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1426,7 +1406,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1659,7 +1638,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1713,7 +1691,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1767,7 +1744,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -1838,7 +1814,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2071,7 +2046,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2125,7 +2099,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2179,7 +2152,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2250,7 +2222,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2483,7 +2454,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2537,7 +2507,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2591,7 +2560,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2662,7 +2630,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2895,7 +2862,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -2949,7 +2915,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3003,7 +2968,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3074,7 +3038,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3307,7 +3270,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3361,7 +3323,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3415,7 +3376,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3486,7 +3446,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3719,7 +3678,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3773,7 +3731,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3827,7 +3784,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -3898,7 +3854,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4131,7 +4086,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4185,7 +4139,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4239,7 +4192,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4310,7 +4262,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4543,7 +4494,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4597,7 +4547,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4651,7 +4600,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4722,7 +4670,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -4955,7 +4902,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5009,7 +4955,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5063,7 +5008,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5134,7 +5078,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5367,7 +5310,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5421,7 +5363,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5475,7 +5416,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5546,7 +5486,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5779,7 +5718,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5833,7 +5771,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5887,7 +5824,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -5958,7 +5894,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6191,7 +6126,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6245,7 +6179,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6299,7 +6232,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6370,7 +6302,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6603,7 +6534,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6657,7 +6587,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6711,7 +6640,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -6782,7 +6710,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7015,7 +6942,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7069,7 +6995,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7123,7 +7048,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7194,7 +7118,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7427,7 +7350,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7481,7 +7403,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7535,7 +7456,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7606,7 +7526,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7839,7 +7758,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7893,7 +7811,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -7947,7 +7864,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8018,7 +7934,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8251,7 +8166,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8305,7 +8219,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8359,7 +8272,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8430,7 +8342,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8663,7 +8574,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8717,7 +8627,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8771,7 +8680,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -8842,7 +8750,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9075,7 +8982,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9129,7 +9035,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9183,7 +9088,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9254,7 +9158,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9487,7 +9390,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9541,7 +9443,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9595,7 +9496,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9666,7 +9566,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9899,7 +9798,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -9953,7 +9851,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10007,7 +9904,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10078,7 +9974,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10311,7 +10206,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10365,7 +10259,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10419,7 +10312,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10490,7 +10382,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10723,7 +10614,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10777,7 +10667,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10831,7 +10720,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -10902,7 +10790,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11135,7 +11022,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11189,7 +11075,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11243,7 +11128,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11314,7 +11198,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11547,7 +11430,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11601,7 +11483,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11655,7 +11536,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11726,7 +11606,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -11959,7 +11838,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12013,7 +11891,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12067,7 +11944,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12138,7 +12014,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12371,7 +12246,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12425,7 +12299,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12479,7 +12352,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12550,7 +12422,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12783,7 +12654,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12837,7 +12707,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12891,7 +12760,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -12962,7 +12830,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13195,7 +13062,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13249,7 +13115,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13303,7 +13168,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13374,7 +13238,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13607,7 +13470,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13661,7 +13523,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13715,7 +13576,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -13786,7 +13646,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14019,7 +13878,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14073,7 +13931,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14127,7 +13984,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14198,7 +14054,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14431,7 +14286,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14485,7 +14339,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14539,7 +14392,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14610,7 +14462,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14843,7 +14694,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14897,7 +14747,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -14951,7 +14800,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15022,7 +14870,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15255,7 +15102,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15309,7 +15155,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15363,7 +15208,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15434,7 +15278,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15667,7 +15510,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15721,7 +15563,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15775,7 +15616,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -15846,7 +15686,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16079,7 +15918,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16133,7 +15971,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16187,7 +16024,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16258,7 +16094,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16491,7 +16326,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16545,7 +16379,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16599,7 +16432,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16670,7 +16502,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16903,7 +16734,6 @@
 			"edges" : 
 			[
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -16957,7 +16787,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -17011,7 +16840,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -17082,7 +16910,6 @@
 					"location" : "location"
 				},
 				{
-					"action" : "",
 					"destinations" : 
 					[
 						{
@@ -17339,7 +17166,7 @@
 	{
 		"author" : "FIG translator",
 		"description" : "JANI file generated from IOSA model",
-		"version" : "Mon Oct 17 16:28:30 2016\n"
+		"version" : "Mon Nov 21 16:14:30 2016\n"
 	},
 	"name" : "database_R3.sa",
 	"properties" : 
