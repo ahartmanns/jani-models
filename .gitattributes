@@ -1,0 +1,15 @@
+* text=auto
+
+*.txt text
+*.md text
+*.jani text
+*.pgcl text
+*.pm text
+*.nm text
+*.sm text
+*.pctl text
+*.modest text
+*.xsadf text
+
+*.png binary
+*.pdf binary
