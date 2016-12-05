@@ -1,6 +1,12 @@
 ﻿{
 	"jani-version": 1,
 	"name": "beb.modest",
+	"metadata": {
+		"author": "Arnd Hartmanns",
+		"description": "MDP model of a bounded exponential backoff procedure with 3 hosts, maximum backoff value 4, and up to 3 tries per host before giving up.",
+		"doi": "10.1007/978-3-642-21461-5_4",
+		"url": "http://www.modestchecker.net/"
+	},
 	"type": "mdp",
 	"features": [ "derived-operators" ],
 	"actions": [
@@ -23,7 +29,8 @@
 				"lower-bound": 0,
 				"upper-bound": 2
 			},
-			"initial-value": 0
+			"initial-value": 0,
+			"comment": "count how many hosts attempt to seize the line in a slot (zero, one, many)"
 		},
 		{
 			"name": "line_seized",
@@ -52,7 +59,8 @@
 				"states": {
 					"op": "initial"
 				}
-			}
+			},
+			"comment": "some host managed to seize the line before any other gave up"
 		},
 		{
 			"name": "GaveUp",
@@ -69,25 +77,18 @@
 				"states": {
 					"op": "initial"
 				}
-			}
+			},
+			"comment": "some host gave up before any other managed to seize the line"
 		}
 	],
 	"automata": [
 		{
 			"name": "Clock",
 			"locations": [
-				{
-					"name": "loc_1"
-				},
-				{
-					"name": "loc_4"
-				},
-				{
-					"name": "loc_6"
-				},
-				{
-					"name": "loc_9"
-				}
+				{ "name": "loc_1" },
+				{ "name": "loc_4" },
+				{ "name": "loc_6" },
+				{ "name": "loc_9" }
 			],
 			"initial-locations": [ "loc_1" ],
 			"edges": [
@@ -127,27 +128,13 @@
 		{
 			"name": "Host",
 			"locations": [
-				{
-					"name": "loc_1"
-				},
-				{
-					"name": "loc_15"
-				},
-				{
-					"name": "loc_16"
-				},
-				{
-					"name": "loc_22"
-				},
-				{
-					"name": "loc_35"
-				},
-				{
-					"name": "loc_21"
-				},
-				{
-					"name": "loc_2"
-				}
+				{ "name": "loc_1" },
+				{ "name": "loc_15" },
+				{ "name": "loc_16" },
+				{ "name": "loc_22" },
+				{ "name": "loc_35" },
+				{ "name": "loc_21" },
+				{ "name": "loc_2" }
 			],
 			"initial-locations": [ "loc_1" ],
 			"variables": [
@@ -159,7 +146,8 @@
 						"lower-bound": 0,
 						"upper-bound": 3
 					},
-					"initial-value": 0
+					"initial-value": 0,
+					"comment": "nr_attempts"
 				},
 				{
 					"name": "ev",
@@ -169,7 +157,8 @@
 						"lower-bound": 0,
 						"upper-bound": 4
 					},
-					"initial-value": 2
+					"initial-value": 2,
+					"comment": "exp_val"
 				},
 				{
 					"name": "wt",
@@ -179,7 +168,8 @@
 						"lower-bound": 0,
 						"upper-bound": 4
 					},
-					"initial-value": 0
+					"initial-value": 0,
+					"comment": "slots_to_wait"
 				}
 			],
 			"edges": [
