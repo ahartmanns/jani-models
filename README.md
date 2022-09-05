@@ -1,5 +1,7 @@
 # jani-models
-A library of formal models in the jani-model format.
+A library of formal models in the jani-model format, collected to demonstrate the <a href="https://jani-spec.org/">JANI</a> model format.
+
+*Note: This library is currently not being actively maintained. For a larger, up-to-date collection of JANI models, please check out the Quantitative Verification Benchmark set at <a href="https://qcomp.org/benchmarks/">qcomp.org</a>.*
 
 ## Models overview
 
